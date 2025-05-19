@@ -1,0 +1,397 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background-image: url(./assets/images/background-desktop.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+
+    .pattern-line{
+        width: 100vw;
+        height: 100vh;
+        background-image: url(./assets/images/pattern-lines.svg);
+        position: absolute;
+        top: 0px;
+        z-index: 0;
+    }
+
+    .pattern-orange-line {
+        width: 50vw;
+        height: 50vh;
+        background-image: url(./assets/images/pattern-squiggly-line-bottom-desktop.svg);
+        position: absolute;
+        top: 503px;
+        z-index: 0;
+    }
+
+    .pattern-top-line{
+        background-image: url(./assets/images/pattern-squiggly-line-top.svg);
+        width: 30vw;
+        height: 30vh;
+        position: absolute;
+        top: 50px;
+        right: 0px;
+        z-index: 0;
+    }
+
+    #main-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 30px;
+        position: relative;
+        z-index: 10;
+
+        .logo{
+            background-image: none;
+        }
+
+        .head{
+            background-image: none;
+            color: white;
+            letter-spacing: 2px;
+            width: 600px;
+            text-align: center;
+            font-size: 35px;
+            padding: 40px 0px 20px 0px;
+        }
+
+        .mini-text {
+            opacity: 80%;
+            color: white;
+            background-image: none;
+        }
+
+        #upload-avatar {
+            width: 350px;
+            padding-top: 30px;
+
+            #user-avatar{
+                color: white;
+                font-weight: 700;
+            }
+
+            #avatar-btn{
+                width: 350px;
+                border: 1px rgba(255, 255, 255, 0.797) dashed;
+                border-radius: 5px;
+                padding: 13px 0px 13px 10px;
+                background-image: none;
+                background-color: rgba(255, 255, 255, 0.195);
+                margin-top: 10px;
+                color: white;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .avatar-photo{
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 15px;
+                }
+
+                .avatar-text{
+                    opacity: 80%;
+                    margin-top: 20px;
+                }
+            }
+
+            #error-avatar{
+                font-size: 10px;
+                color: rgba(255, 255, 255, 0.508);
+                margin-top: 10px;
+            }
+        }
+
+        #full-name {
+            width: 350px;
+            padding-top: 20px;
+
+            #user-name{
+                color: white;
+                font-weight: 700;
+            }
+
+            .input-name{
+                width: 350px;
+                border: 1px rgba(255, 255, 255, 0.797) solid;
+                border-radius: 5px;
+                padding: 13px 0px 13px 10px;
+                background-image: none;
+                background-color: rgba(255, 255, 255, 0.195);
+                margin-top: 10px;
+                color: white;
+            }
+        }
+
+        #email {
+            width: 350px;
+            padding-top: 20px;
+
+            #user-email{
+                color: white;
+                font-weight: 700;
+            }
+
+            .input-email{
+                width: 350px;
+                border: 1px rgba(255, 255, 255, 0.797) solid;
+                border-radius: 5px;
+                padding: 13px 0px 13px 10px;
+                background-image: none;
+                background-color: rgba(255, 255, 255, 0.195);
+                margin-top: 10px;
+                color: white;
+            }
+
+            #error-email {
+                font-size: 10px;
+                margin-top: 10px;
+            }
+        }
+
+        #github-name {
+            width: 350px;
+            padding-top: 20px;
+
+
+            #github-user-name{
+                background-image: none;
+                color: white;
+                font-weight: 700;
+            }
+
+            .input-github{
+                width: 350px;
+                border: 1px rgba(255, 255, 255, 0.797) solid;
+                border-radius: 5px;
+                padding: 13px 0px 13px 10px;
+                background-image: none;
+                background-color: rgba(255, 255, 255, 0.195);
+                margin-top: 10px;
+                color: white;
+            }
+        }
+
+        #button-generate {
+            padding-top: 20px;
+            background-image: none;
+
+
+            #ticket-btn{
+                font-weight: 700;
+                width: 350px;
+                height: 40px;
+                background-image: none;
+                background-color: hsl(7, 71%, 60%);
+                border: none;
+                border-radius: 5px;
+                color: hsl(248, 70%, 10%);
+            }
+        }
+    }
+}
+
+@media screen and (max-width:400px){
+    body{
+        background-image: url(./assets/images/background-mobile.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+
+        .pattern-line{
+            width: 100vw;
+            height: 100vh;
+            background-image: url(./assets/images/pattern-lines.svg);
+            position: absolute;
+            background-size: cover;
+            background-repeat: no-repeat;
+            top: 0px;
+            z-index: 0;
+        }
+
+        .pattern-orange-line {
+            width: 50vw;
+            height: 50vh;
+            background-image: url(./assets/images/pattern-squiggly-line-bottom-mobile-tablet.svg);
+            position: absolute;
+            background-size: cover;
+            background-repeat: no-repeat;
+            top: 583px;
+            z-index: 0;
+        }
+
+        .pattern-top-line{
+            background-image: url(./assets/images/pattern-squiggly-line-top.svg);
+            width: 100vw;
+            height: 100vh;
+            position: absolute;
+            background-repeat: no-repeat;
+            top: 50px;
+            right: 0px;
+            z-index: 0;
+        }
+
+        #main-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding-top: 30px;
+            position: relative;
+            z-index: 10;
+
+            .logo{
+                background-image: none;
+            }
+
+            .head{
+                background-image: none;
+                color: white;
+                letter-spacing: 2px;
+                width: 350px;
+            }
+
+            .mini-text {
+                opacity: 80%;
+                color: white;
+                background-image: none;
+                text-align: center;
+            }
+
+            #upload-avatar {
+                width: 350px;
+                padding-top: 30px;
+
+                #user-avatar{
+                    color: white;
+                    font-weight: 700;
+                }
+
+                #avatar-btn{
+                    width: 350px;
+                    border: 1px rgba(255, 255, 255, 0.797) dashed;
+                    border-radius: 5px;
+                    padding: 13px 0px 13px 10px;
+                    background-image: none;
+                    background-color: rgba(255, 255, 255, 0.195);
+                    margin-top: 10px;
+                    color: white;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    .avatar-photo{
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 15px;
+                    }
+
+                    .avatar-text{
+                        opacity: 80%;
+                        margin-top: 20px;
+                    }
+                }
+
+                #error-avatar{
+                    font-size: 10px;
+                    color: rgba(255, 255, 255, 0.508);
+                    margin-top: 10px;
+                }
+            }
+
+            #full-name {
+                width: 350px;
+                padding-top: 20px;
+
+                #user-name{
+                    color: white;
+                    font-weight: 700;
+                }
+
+                .input-name{
+                    width: 350px;
+                    border: 1px rgba(255, 255, 255, 0.797) solid;
+                    border-radius: 5px;
+                    padding: 13px 0px 13px 10px;
+                    background-image: none;
+                    background-color: rgba(255, 255, 255, 0.195);
+                    margin-top: 10px;
+                    color: white;
+                }
+            }
+
+            #email {
+                width: 350px;
+                padding-top: 20px;
+
+                #user-email{
+                    color: white;
+                    font-weight: 700;
+                }
+
+                .input-email{
+                    width: 350px;
+                    border: 1px rgba(255, 255, 255, 0.797) solid;
+                    border-radius: 5px;
+                    padding: 13px 0px 13px 10px;
+                    background-image: none;
+                    background-color: rgba(255, 255, 255, 0.195);
+                    margin-top: 10px;
+                    color: white;
+                }
+
+                #error-email {
+                    font-size: 10px;
+                    margin-top: 10px;
+                }
+            }
+
+            #github-name {
+                width: 350px;
+                padding-top: 20px;
+
+
+                #github-user-name{
+                    background-image: none;
+                    color: white;
+                    font-weight: 700;
+                }
+
+                .input-github{
+                    width: 350px;
+                    border: 1px rgba(255, 255, 255, 0.797) solid;
+                    border-radius: 5px;
+                    padding: 13px 0px 13px 10px;
+                    background-image: none;
+                    background-color: rgba(255, 255, 255, 0.195);
+                    margin-top: 10px;
+                    color: white;
+                }
+            }
+
+            #button-generate {
+                padding-top: 20px;
+                background-image: none;
+
+
+                #ticket-btn{
+                    font-weight: 700;
+                    width: 350px;
+                    height: 40px;
+                    background-image: none;
+                    background-color: hsl(7, 71%, 60%);
+                    border: none;
+                    border-radius: 5px;
+                    color: hsl(248, 70%, 10%);
+                }
+            }
+        }
+    }
+}

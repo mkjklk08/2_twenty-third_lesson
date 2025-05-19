@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Conference ticket generator</title>
+  <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+  <div class="pattern-line"></div>
+  <div class="pattern-orange-line"></div>
+  <div class="pattern-top-line"></div>
+
+  <div id="main-section">
+
+    <img src="./assets/images/logo-full.svg" alt="" class="logo">
+    <h1 class="head">Your Journey to Coding Conf 2025 Starts Here!</h1>
+    <p class="mini-text">Secure your spot at next year's biggest coding conference.</p>
+
+    <div id="upload-avatar">
+      <p id="user-avatar">Upload Avatar</p>
+      <button id="avatar-btn">
+        <img src="./assets/images/image-avatar.jpg" alt="" class="avatar-photo">
+        <p class="avatar-text">Drag and drop or click to upload</p>
+      </button>
+      <p id="error-avatar">Upload your photo( JPG or PNG, max size: 5MB).</p>
+    </div>
+     
+    <div id="full-name">
+      <p id="user-name">Full Name</p>
+      <input type="email" placeholder="" class="input-name">
+    </div>
+
+    <div id="email">
+      <p id="user-email">Email Address</p>
+      <input type="email" placeholder="example@email.com" class="input-email">
+      <p id="error-email"></p>
+    </div>
+
+    <div id="github-name">
+      <p id="github-user-name">GitHub Username</p>
+      <input type="email" placeholder="@yourusername" class="input-github">
+    </div>
+
+    
+
+    <div id="button-generate">
+      <button id="ticket-btn">Generate My ticket</button>
+    </div>
+  </div>
+  <script src="./index.js"></script>
+</body>
+</html>

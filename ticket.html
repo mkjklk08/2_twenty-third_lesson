@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Conference ticket generator</title>
+  <link rel="stylesheet" href="./ticket.css">
+</head>
+<body>
+    <div class="pattern-line"></div>
+    <div class="pattern-orange-line"></div>
+    <div class="pattern-top-line"></div>
+
+    <div id="main-section2">
+        <img src="./assets/images/logo-full.svg" alt="" class="logo">
+        <h1 class="head">Congrats, <span id="name-user-lc"></span>! Your ticket is ready.</h1>
+        <p class="mini-text">We've emailed your ticket to <span id="email-user-lc"></span> and will send updates in the run up to the event.</p>
+
+        <div id="container">
+            <div id="data-logo">
+                <img src="./assets/images/logo-full.svg" alt="" class="logo">
+                <p class="data">Jan 31, 2025 / Austin, TX</p>
+            </div>
+            <div id="info">
+                <img src="./assets/images/image-avatar.jpg" alt="" class="avatar-photo">
+                <div class="about-user">
+                    <p id="name-user-lc-info"></p>
+                    <p id="github-user-lc-info"></p>
+                    <p id="ticket-number"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const users = JSON.parse(localStorage.getItem("users"));
+        console.log(users)
+
+        const nameUserLc = document.getElementById('name-user-lc');
+        nameUserLc.textContent = users.nameUser;
+
+        const emailUserLc = document.getElementById('email-user-lc');
+        emailUserLc.textContent = users.emailUser;
+
+        const githubUserLcInfo = document.getElementById('github-user-lc-info');
+        githubUserLcInfo.textContent = users.githubUser;
+
+        const nameUserLcInfo = document.getElementById('name-user-lc-info');
+        nameUserLcInfo.textContent = users.nameUser;
+
+        const randomNumber = Math.floor(Math.random() * 10000)
+
+        const ticketNumber = document.getElementById('ticket-number');
+        ticketNumber.textContent = '#'+randomNumber;
+    </script>
+</body>
+</html>
